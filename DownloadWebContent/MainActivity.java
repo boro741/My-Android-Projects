@@ -25,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
             HttpURLConnection urlConnection = null;
 
             try{
+                /*Steps to connect to internet*/
+                /*
+                 * 1. Open
+                 * 2. Connect
+                 * 3. Store
+                */
                 url = new URL(urls[0]);
 
                 urlConnection = (HttpURLConnection) url.openConnection();
