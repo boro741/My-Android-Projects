@@ -1,0 +1,8 @@
+
+
+<!-- When back button clicked to get to main activity -->
+<activity
+            android:name=".MapsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/title_activity_maps">
+</activity>
