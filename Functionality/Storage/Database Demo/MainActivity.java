@@ -23,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
             myDatabase.execSQL("INSERT INTO users (name,age) VALUES ('Sahil',21)");
 
             // To get the data out
+            // Cursor:
+            /*
+             *  This temporary work area is used to store the data retrieved from the database, 
+             *  and manipulate this data. A cursor can hold more than one row, but can process 
+             *  only one row at a time. The set of rows the cursor holds is called the active set.
+             */
             Cursor c = myDatabase.rawQuery("SELECT * FROM users", null);
 
             int nameIndex = c.getColumnIndex("name");
