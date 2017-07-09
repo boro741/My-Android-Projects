@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         webView.getSettings().setJavaScriptEnabled(true);
 
+        // Doesn't direct to chrome browser
         webView.setWebViewClient(new WebViewClient());
 
         webView.loadUrl("https://www.google.com ");
